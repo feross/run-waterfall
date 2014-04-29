@@ -61,8 +61,9 @@ Works great in the browser with [browserify](http://browserify.org/)!
 
 ### see also
 
-- [run-waterfall](https://github.com/feross/run-waterfall)
+- [run-auto](https://github.com/feross/run-auto)
 - [run-parallel](https://github.com/feross/run-parallel)
+- [run-series](https://github.com/feross/run-series)
 
 ### license
 
