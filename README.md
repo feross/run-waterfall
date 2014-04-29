@@ -1,7 +1,6 @@
 # run-waterfall [![travis](https://img.shields.io/travis/feross/run-waterfall.svg)](https://travis-ci.org/feross/run-waterfall) [![npm](https://img.shields.io/npm/v/run-waterfall.svg)](https://npmjs.org/package/run-waterfall)
 
-### Run an array of functions in series, **each passing their results to the next in
-the array**
+### Run an array of functions in series, **each passing its results to the next function**
 
 ![waterfall](https://raw.githubusercontent.com/feross/run-waterfall/master/img.png) [![browser support](https://ci.testling.com/feross/run-waterfall.png)](https://ci.testling.com/feross/run-waterfall)
 
