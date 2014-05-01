@@ -67,3 +67,5 @@ Works great in the browser with [browserify](http://browserify.org/)!
 ### license
 
 MIT. Copyright (c) [Feross Aboukhadijeh](http://feross.org).
+
+Image credit: Waterfall designed by Luis Prado
