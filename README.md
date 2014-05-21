@@ -1,4 +1,4 @@
-# run-waterfall [![travis](https://img.shields.io/travis/feross/run-waterfall.svg)](https://travis-ci.org/feross/run-waterfall) [![npm](https://img.shields.io/npm/v/run-waterfall.svg)](https://npmjs.org/package/run-waterfall)
+# run-waterfall [![travis](https://img.shields.io/travis/feross/run-waterfall.svg)](https://travis-ci.org/feross/run-waterfall) [![npm](https://img.shields.io/npm/v/run-waterfall.svg)](https://npmjs.org/package/run-waterfall) [![npm](https://img.shields.io/npm/dm/run-waterfall.svg)](https://npmjs.org/package/run-waterfall)
 
 ### Run an array of functions in series, **each passing its results to the next function**
 
