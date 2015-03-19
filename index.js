@@ -1,13 +1,13 @@
+var dezalgo = require('dezalgo')
+
 module.exports = function (tasks, cb) {
   var current = 0
-  cb = cb || function () {}
+  if (cb) cb = dezalgo(cb)
 
   function done (err) {
     var args = Array.prototype.slice.call(arguments, 1)
-    if (err) return cb(err, args)
-
-    if (++current >= tasks.length) {
-      cb.apply(undefined, [null].concat(args))
+    if (++current >= tasks.length || err) {
+      if (cb) cb.apply(undefined, [err].concat(args))
     } else {
       tasks[current].apply(undefined, args.concat(done))
     }
@@ -16,6 +16,6 @@ module.exports = function (tasks, cb) {
   if (tasks.length) {
     tasks[0](done)
   } else {
-    cb(null, [])
+    if (cb) cb(null)
   }
 }
