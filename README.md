@@ -1,8 +1,15 @@
-# run-waterfall [![travis](https://img.shields.io/travis/feross/run-waterfall.svg)](https://travis-ci.org/feross/run-waterfall) [![npm](https://img.shields.io/npm/v/run-waterfall.svg)](https://npmjs.org/package/run-waterfall) [![npm](https://img.shields.io/npm/dm/run-waterfall.svg)](https://npmjs.org/package/run-waterfall)
+# run-waterfall [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url]
+
+[travis-image]: https://img.shields.io/travis/feross/run-waterfall.svg?style=flat
+[travis-url]: https://travis-ci.org/feross/run-waterfall
+[npm-image]: https://img.shields.io/npm/v/run-waterfall.svg?style=flat
+[npm-url]: https://npmjs.org/package/run-waterfall
+[downloads-image]: https://img.shields.io/npm/dm/run-waterfall.svg?style=flat
+[downloads-url]: https://npmjs.org/package/run-waterfall
 
 ### Run an array of functions in series, **each passing its results to the next function**
 
-![waterfall](https://raw.githubusercontent.com/feross/run-waterfall/master/img.png) [![browser support](https://ci.testling.com/feross/run-waterfall.png)](https://ci.testling.com/feross/run-waterfall)
+![waterfall](https://raw.githubusercontent.com/feross/run-waterfall/master/img.png) [![Sauce Test Status](https://saucelabs.com/browser-matrix/run-waterfall.svg)](https://saucelabs.com/u/run-waterfall)
 
 ### install
 
