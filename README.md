@@ -62,6 +62,7 @@ Works great in the browser with [browserify](http://browserify.org/)!
 
 - [run-auto](https://github.com/feross/run-auto)
 - [run-parallel](https://github.com/feross/run-parallel)
+- [run-parallel-limit](https://github.com/feross/run-parallel-limit)
 - [run-series](https://github.com/feross/run-series)
 
 ### license
