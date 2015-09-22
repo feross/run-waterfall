@@ -1,21 +1,30 @@
-var dezalgo = require('dezalgo')
-
 module.exports = function (tasks, cb) {
   var current = 0
-  if (cb) cb = dezalgo(cb)
+  var isSync = true
 
-  function done (err) {
+  function done (err, args) {
+    function end () {
+      args = args ? [].concat(err, args) : [ err ]
+      if (cb) cb.apply(undefined, args)
+    }
+    if (isSync) process.nextTick(end)
+    else end()
+  }
+
+  function each (err) {
     var args = Array.prototype.slice.call(arguments, 1)
     if (++current >= tasks.length || err) {
-      if (cb) cb.apply(undefined, [err].concat(args))
+      done(err, args)
     } else {
-      tasks[current].apply(undefined, args.concat(done))
+      tasks[current].apply(undefined, [].concat(args, each))
     }
   }
 
   if (tasks.length) {
-    tasks[0](done)
+    tasks[0](each)
   } else {
-    if (cb) cb(null)
+    done(null)
   }
+
+  isSync = false
 }
