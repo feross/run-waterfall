@@ -1,5 +1,7 @@
 # run-waterfall [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/feross/run-waterfall.svg)](https://greenkeeper.io/)
+
 [travis-image]: https://img.shields.io/travis/feross/run-waterfall/master.svg
 [travis-url]: https://travis-ci.org/feross/run-waterfall
 [npm-image]: https://img.shields.io/npm/v/run-waterfall.svg
