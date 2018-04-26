@@ -1,4 +1,6 @@
-module.exports = function (tasks, cb) {
+module.exports = runWaterfall
+
+function runWaterfall (tasks, cb) {
   var current = 0
   var isSync = true
 
