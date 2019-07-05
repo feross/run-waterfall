@@ -6,7 +6,7 @@ function runWaterfall (tasks, cb) {
 
   function done (err, args) {
     function end () {
-      args = args ? [].concat(err, args) : [ err ]
+      args = args ? [].concat(err, args) : [err]
       if (cb) cb.apply(undefined, args)
     }
     if (isSync) process.nextTick(end)
