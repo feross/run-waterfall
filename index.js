@@ -1,3 +1,4 @@
+/*! run-waterfall. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
 module.exports = runWaterfall
 
 function runWaterfall (tasks, cb) {
