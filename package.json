@@ -1,7 +1,7 @@
 {
   "name": "run-waterfall",
   "description": "Run an array of functions in series, each passing its results to the next function (waterfall)",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "author": {
     "name": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
