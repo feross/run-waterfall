@@ -1,10 +1,10 @@
-var waterfall = require('../')
-var test = require('tape')
+const waterfall = require('../')
+const test = require('tape')
 
 test('no callback', function (t) {
   t.plan(2)
 
-  var tasks = [
+  const tasks = [
     function (cb) {
       t.pass('cb 1')
       cb(null)

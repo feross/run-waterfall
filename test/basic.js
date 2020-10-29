@@ -1,10 +1,10 @@
-var waterfall = require('../')
-var test = require('tape')
+const waterfall = require('../')
+const test = require('tape')
 
 test('functions run in series', function (t) {
   t.plan(4)
 
-  var tasks = [
+  const tasks = [
     function (cb) {
       t.pass('cb 1')
       cb(null)
@@ -27,7 +27,7 @@ test('functions run in series', function (t) {
 test('waterfall: functions pass results to next function', function (t) {
   t.plan(8)
 
-  var tasks = [
+  const tasks = [
     function (cb) {
       t.pass('cb 1')
       cb(null, 1)
